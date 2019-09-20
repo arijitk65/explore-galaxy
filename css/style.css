@@ -1,0 +1,116 @@
+ html, body {
+	width: 100%;
+	height: 100vh;
+	margin: 0;
+	border: 0;
+	padding: 0;
+
+}
+::-webkit-scrollbar {
+	display: none;
+}
+::-moz-scrollbar {
+	display: none;
+}
+::scrollbar {
+	display: none;
+}
+
+/* Home page 1st section */
+
+#hp-01 {
+	display: block;
+	width: 100%;
+	height: 100vh;
+	color: white;
+	text-align: center;
+	margin: auto;
+	background: url('../images/galaxy.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#hp-01 .welcome-text {
+	margin-top: 60vh;
+	font-size: 80px;
+	font-family: 'Mansalva', cursive;
+	font-weight: bold;
+	-webkit-box-shadow: 8px 5px 15px 7px black;
+    -moz-box-shadow: 8px 5px 15px 7px black;
+    box-shadow: 8px 5px 15px 7px black;
+}
+
+#hp-01 a {
+	border-radius: 50%;
+	position: relative;
+	margin: auto;
+	top: 100px;
+	width: 80px;
+	height: 80px;
+	background: transparent;
+	border:1px solid white;
+}
+
+#hp-01 a:hover {
+	background: black;
+	border: 1px solid black;
+	width: 83px;
+	height: 83px;
+}
+
+#hp-01 a img {
+	filter: brightness(0) invert(1);
+	margin-top: 30%;
+	width: 40px;
+	height: 50%;
+}
+
+#hp-02 {
+	background: white;
+	width: 100%;
+	height: 100vh;
+	transition-delay: 5s;
+}
+#hp-02 video {
+	width: 100%;
+}
+
+#hp-02 .card {
+	position: relative;
+	top: -40vh;
+	left: 1vw;
+	background: rgba(0,0,0,.5);
+	color: white;
+	border-radius: 10px;
+}
+#hp-02 .card p {
+	font-size: 13px;
+}
+
+
+
+
+/* any screeb size less than 768 (small screen)*/
+
+@media screen and (max-width: 768px) {
+	#hp-01 .welcome-text {
+		font-size: 50px;
+		margin-top: 40vh;
+	}
+	#hp-01 a {
+		top: 60px;
+		width: 50px; 
+		height: 50px;
+	}
+	#hp-02 .card {
+		top: -30vh;
+		right: 5vw;
+	}
+	#hp-02 .card p {
+		font-size: 8px;
+	}
+	#hp-02 .card a {
+		font-size: 5px;
+	}
+}
